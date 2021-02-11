@@ -1,0 +1,38 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    color: #E0FBFC;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+body {
+    background-color: #293241;
+}
+
+#avatar {
+    border-radius: 50%;
+    border: solid 4px #ee6c4d;
+}
+
+div {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+#about {
+    width: 750px;
+}
+
+h1 {
+    color: #ee6c4d;
+    font-weight: 900;
+}
+
+p {
+    color: #98c1d9;
+}
+
+ul {
+    list-style-type: none;
+}
