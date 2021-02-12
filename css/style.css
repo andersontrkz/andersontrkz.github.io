@@ -1,38 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://font-awesome/css/font-awesome.min.css');
+   
+
+:root {
+    --color-primary: #E0FBFC;
+    --color-secundary: #ee6c4d;
+    --color-terciary: #7159c1;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
-    color: #E0FBFC;
+    color: var(--color-primary);
     font-weight: 600;
     line-height: 20px;
 }
 
-body {
-    background-color: #293241;
+header {
+    font-size: 18px;
+    border: solid 1px #22223b;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-#avatar {
-    border-radius: 50%;
-    border: solid 4px #ee6c4d;
+body {
+    background-color: #140E1B;
 }
 
 div {
     margin: auto;
-    width: 500px;
     text-align: center;
 }
 
-#about {
-    width: 750px;
-}
 
 h1 {
-    color: #ee6c4d;
+    color: var(--color-secundary);
     font-weight: 900;
 }
 
 p {
-    color: #98c1d9;
+    color: var(--color-primary);
 }
 
-ul {
+a {
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-secundary);
+    transition: color 200ms;
+}
+
+i {
+    font-size: 12px;;
+}
+
+header h3{
+    font-size: 18px;
+}
+
+#div-avatar {
+    padding: 40px;
+}
+
+#avatar {
+    border-radius: 50%;
+    border: solid 2px var(--color-secundary);
+}
+
+#about {
+    width: 980px;
+    margin-top: 48px;
+}
+
+#skill {
+    margin: 48px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    border: solid 1px #22223b;
+}
+
+.skills {
+    width: 300px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.skills h3 {
+    color: #ffd046;
+}
+
+.skills ul {
     list-style-type: none;
+}
+
+#social {
+    margin-top: 64px;
+}
+
+#social a {
+    border-bottom: 1px solid  var(--color-secundary);
+    padding-bottom: 3px;
+}
+
+#social i {
+    font-size: 16px;
+    color: var(--color-secundary);
+}
+
+.ul-inline li {
+    display: inline;
 }
