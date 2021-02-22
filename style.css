@@ -6,6 +6,7 @@
     --color-primary: #E0FBFC;
     --color-secundary: #ee6c4d;
     --color-terciary: #7159c1;
+    --color-quaternary: #22223b;
 }
 
 * {
@@ -16,8 +17,8 @@
 }
 
 header {
-    font-size: 18px;
-    border: solid 1px #22223b;
+    font-size: 16px;
+    border: solid 1px var(--color-quaternary);
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -55,15 +56,25 @@ i {
     font-size: 12px;;
 }
 
-header h3{
-    font-size: 18px;
+#top{
+    border-bottom: solid 1px var(--color-quaternary);
+}
+
+#middle {
+    border: solid 1px var(--color-quaternary);
+    border-radius: 20px;
+    margin-top: 120px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 #div-avatar {
-    padding: 40px;
+    padding: 0px;
 }
 
 #avatar {
+    width: 216px;
+    margin-top: -90px;
     border-radius: 50%;
     border: solid 2px var(--color-secundary);
 }
@@ -79,7 +90,7 @@ header h3{
     grid-template-columns: 1fr 1fr;
     background: rgba(0, 0, 0, 0.2);
     padding: 18px;
-    border: solid 1px #22223b;
+    border: solid 1px var(--color-quaternary);
 }
 
 .skills {
