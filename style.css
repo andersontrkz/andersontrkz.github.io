@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://font-awesome/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
    
 
 :root {
@@ -7,23 +8,43 @@
     --color-secundary: #ee6c4d;
     --color-terciary: #7159c1;
     --color-quaternary: #22223b;
+    --color-quinary: rgba(0, 0, 0, 0.2);
 }
 
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color-primary);
-    font-weight: 600;
     line-height: 20px;
 }
 
-header {
-    font-size: 16px;
-    border: solid 1px var(--color-quaternary);
-    background: rgba(0, 0, 0, 0.2);
+h1 , h2 , h3 , h4 , h5 , h6 , a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.sections-grid{
+    border-bottom: solid 1px var(--color-quaternary);
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top-sections {
+    display: inline-grid;
+    align-content: center;
+}
+
+#warning i{
+    font-size: 14px;
 }
 
 body {
     background-color: #140E1B;
+}
+
+#footer {
+    margin-top: 40px;
 }
 
 div {
@@ -54,10 +75,6 @@ a:hover {
 
 i {
     font-size: 12px;;
-}
-
-#top{
-    border-bottom: solid 1px var(--color-quaternary);
 }
 
 #middle {
@@ -91,6 +108,7 @@ i {
     background: rgba(0, 0, 0, 0.2);
     padding: 18px;
     border: solid 1px var(--color-quaternary);
+    border-radius: 20px;
 }
 
 .skills {
@@ -105,10 +123,6 @@ i {
 
 .skills ul {
     list-style-type: none;
-}
-
-#social {
-    margin-top: 64px;
 }
 
 #social a {
