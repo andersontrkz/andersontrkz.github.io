@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+:root {
+  --major-light-theme: aliceblue;
+  --text-light-theme: #121214;
+  --primary-light-theme: #f61a17;
+  --secundary-light-theme: #f61a17;
+  --tertiary-light-theme: #08fdd8;
+  --inverter-light-theme: 1;
+  --logo-light-theme: url('./images/mainLogoBlack.png') no-repeat;
+
+  --major-dark-theme: #162a35;
+  --text-dark-theme: #f2f4f3;
+  --primary-dark-theme: #f61a17;
+  --secundary-dark-theme: #08fdd8;
+  --tertiary-dark-theme: #08fdd8;
+  --inverter-dark-theme: 0;
+  --logo-dark-theme: url('./images/mainLogoWhite.png') no-repeat;
+
+
+  --major-theme: var(--major-light-theme);
+  --text-theme: var(--text-light-theme);
+  --primary-theme: var(--primary-light-theme);
+  --secundary-theme: var(--secundary-light-theme);
+  --tertiary-theme: var(--tertiary-light-theme);
+  --inverter-theme: var(--inverter-light-theme);
+  --logo-theme: var(--logo-light-theme);
+  --neutral-theme: var(--neutral-light-theme);
+}
+ 
+body {
+  background-color: var(--major-theme);
+  color: var(--text-theme);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.align-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Side bar top */
+.menu-side-bar-title {
+  text-align: center;
+  font-size: 2.4vh;
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 0;
+}
+
+.menu-side-bar-slogan {
+  font-family: 'Zen Loop', cursive;
+  font-weight: 900;
+  font-size: 3vh;
+  text-align: center;
+  margin-top: 0;
+}
+
+.menu-side-bar-logo {
+  background: var(--logo-theme);
+  background-size: contain;
+  background-color: var(--major-theme);
+  background-position-x: center;
+  background-position-y: center;
+}
+
+/* Header */
+.menu-side-bar-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Item List */
+.menu-side-bar-icon {
+  color: var(--text-theme);
+}
+
+.menu-side-bar-list {
+  height: 80%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.menu-side-bar-list * {
+  margin: 4px 0;
+}
+
+/* Side menu items */
+.menu-side-bar-list-box {
+  border-color: var(--secundary-theme);
+  background-image: -webkit-linear-gradient(45deg, var(--secundary-theme) 50%, transparent 50%);
+  background-image: linear-gradient(135deg, var(--secundary-theme) 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.menu-side-bar-list-box:hover {
+  background-position: 0;
+}
+
+.menu-side-bar-list-box a {
+  font-family: 'Ubuntu';
+  color: var(--text-theme);
+  text-decoration: none;
+}
+
+.menu-side-bar-list-box:hover > * {
+  color: var(--major-theme);
+}
+
+.menu-side-bar-list-box:hover .menu-side-bar-icon {
+  color: var(--major-theme);
+}
+
+.menu-side-bar-social-media-box  {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background-color: var(--secundary-theme);
+  color: var(--major-theme);
+  border-top: 2px solid var(--secundary-theme);
+  border-bottom: 2px solid var(--secundary-theme);
+  top: 4px;
+  box-shadow: 5px 10px #888888;
+    -webkit-box-shadow: inset 0px 0px 0px 2px var(--major-theme);
+}
+
+/* Social media bottom */
+.menu-side-bar-social-media-box * {
+  padding: 2px;
+  border-radius: 8px;
+  background-color: var(--secundary-theme);
+  border-color: var(--major-theme);
+  background-image: -webkit-linear-gradient(45deg, var(--major-theme) 50%, transparent 50%);
+  background-image: linear-gradient(135deg, var(--major-theme) 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.menu-side-bar-social-media-box *:hover {
+  background-position: 0;
+}
+
+.menu-side-bar-social-media-icon {
+  margin: 4px;
+}
+
+.menu-side-bar-social-media-icon:hover{
+  color: var(--secundary-theme);
+  transition: all 500ms cubic-bezier(0.2, 0, 0, 0.8)
+}
+
+/* outros switch color */
+.switch-icon {
+  color: var(--text-theme);
+}

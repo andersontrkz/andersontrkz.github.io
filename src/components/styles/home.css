@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+.home-screen-box  {
+  margin-top: 40px;
+  font-size: 3rem;
+  opacity: 0.8;
+  height: 100vh;
+}
+
+.home-screen-box  h1 {
+  -webkit-text-stroke: 2px black; /* width and color */
+    font-family: 'Coda', cursive;
+    color: var(--secundary-theme);
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0.95;
+}
+
+.home-main-container {
+  border-right: 2px solid var(--secundary-theme);
+  padding-left: 40px;
+  margin-right: 80px;
+  background-color: var(--major-theme);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+  border-radius: 16px;
+}
+
+.home-main-container span {
+  color: var(--text-theme);
+  opacity: 0.85;
+}
+
+.home-main-container-message a {
+  text-decoration: none;
+  color: var(--secundary-theme);
+}
+
+.home-background {
+  margin-top: 70px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
